@@ -60,7 +60,8 @@ export const geo = {
                 await dispatch.geo.changeState({
                     data: data.currently,
                     isLoading: false,
-                    city
+                    city,
+                    errorMessage:null
                 })}
             } catch (error) {
                 await dispatch.geo.changeState({
